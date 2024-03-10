@@ -57,7 +57,7 @@ public class HomeController extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("listProduct", listProduct);
         session.setAttribute("listCategory", listCategory);
-        request.getRequestDispatcher("manage/home.jsp").forward(request, response);
+        request.getRequestDispatcher("manage/homepages/home.jsp").forward(request, response);
     }
 
     

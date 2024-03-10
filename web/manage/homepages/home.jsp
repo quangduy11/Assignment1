@@ -24,13 +24,16 @@
         <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
         <!-- Bootstrap CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
         <!-- Bootstrap CSS
         ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css">
+         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" 
+              integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" 
+              crossorigin="anonymous" 
+              referrerpolicy="no-referrer" />
         <!-- owl.carousel CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.carousel.css">
@@ -64,8 +67,51 @@
         <!-- responsive CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/responsive.css">
-        <!-- modernizr JS
+        
+        <!-- Bootstrap CSS
         ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+        <!-- Bootstrap CSS
+        ============================================ -->
+         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" 
+              integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" 
+              crossorigin="anonymous" 
+              referrerpolicy="no-referrer" />
+        <!-- owl.carousel CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.carousel.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.theme.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.transitions.css">
+        <!-- jquery-ui CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jquery-ui.css">
+        <!-- meanmenu CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/meanmenu.min.css">
+        <!-- nivoslider CSS
+        ============================================ -->
+        <link rel="stylesheet" href="lib/css/nivo-slider.css">
+        <link rel="stylesheet" href="lib/css/preview.css">
+        <!-- animate CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/animate.css">
+        <!-- magic CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/magic.css">
+        <!-- normalize CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/normalize.css">
+        <!-- main CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
+        <!-- style CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+        <!-- responsive CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/responsive.css">
+        
         
     </head>
     <body>
@@ -73,9 +119,9 @@
         <!-- header area start -->
         <header>
             <!-- header-top-link -->   
-            <jsp:include page="common/header-top-link.jsp"></jsp:include>
+            <jsp:include page="../common/header-top-link.jsp"></jsp:include>
             <!-- header-main-menu --> 
-            <jsp:include page="common/header-main-menu.jsp"></jsp:include>
+            <jsp:include page="../common/header-main-menu.jsp"></jsp:include>
             
         </header>
         <!-- header area end -->
@@ -432,7 +478,7 @@
         <!-- product main items area end -->
 
         <!-- footer area start -->
-        <jsp:include page="common/footer.jsp"></jsp:include>
+        <jsp:include page="../common/footer.jsp"></jsp:include>
         <!-- footer area end -->
         <!-- footer area start -->
         
@@ -494,6 +540,9 @@
         </div>
         <!-- quickview product start -->
         <!-- jquery
+        ============================================ -->
+        
+        <!-- modernizr JS
         ============================================ -->
         <script src="${pageContext.request.contextPath}/js/vendor/modernizr-2.8.3.min.js"></script>
        
