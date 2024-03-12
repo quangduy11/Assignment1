@@ -7,7 +7,6 @@
 <!doctype html>
 <html class="no-js" lang="">
     
-<!-- Mirrored from htmldemo.net/james/james/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Mar 2024 21:25:13 GMT -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -24,56 +23,25 @@
         <link href='https://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <!-- Bootstrap CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-        <!-- Bootstrap CSS
-        ============================================ -->
-         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css">
+        <!-- font awesome -->        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" 
               integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" 
               crossorigin="anonymous" 
               referrerpolicy="no-referrer" />
-        <!-- owl.carousel CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.carousel.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.theme.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.transitions.css">
-        <!-- jquery-ui CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jquery-ui.css">
-        <!-- meanmenu CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/meanmenu.min.css">
-        <!-- nivoslider CSS
-        ============================================ -->
-        <link rel="stylesheet" href="lib/css/nivo-slider.css">
-        <link rel="stylesheet" href="lib/css/preview.css">
-        <!-- animate CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/animate.css">
-        <!-- magic CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/magic.css">
-        <!-- normalize CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/normalize.css">
-        <!-- main CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
-        <!-- style CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
-        <!-- responsive CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/responsive.css">
         
+        <!-- jquery-ui CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jquery-ui.css">
+        <!-- main CSS
+        ============================================ -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
         <!-- Bootstrap CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
         <!-- Bootstrap CSS
         ============================================ -->
          <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css">
+         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" 
               integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" 
               crossorigin="anonymous" 
@@ -83,9 +51,7 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.carousel.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.theme.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/owl.transitions.css">
-        <!-- jquery-ui CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jquery-ui.css">
+        
         <!-- meanmenu CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/meanmenu.min.css">
@@ -102,9 +68,7 @@
         <!-- normalize CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/normalize.css">
-        <!-- main CSS
-        ============================================ -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
+        
         <!-- style CSS
         ============================================ -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
@@ -156,7 +120,7 @@
                                 <div class="single-sidebar-content">
                                     <ul>
                                         <c:forEach items="${listCategory}" var="cate">
-                                        <li><a href="#">${cate.name}</a></li>
+                                        <li><a href="home?search=category&categoryId=${cate.id}">${cate.name}</a></li>
                                         
                                         </c:forEach>
                                     </ul>
@@ -270,7 +234,7 @@
                                             <div class="col-lg-4 col-md-6">
                                                 <div class="single-product">                                                    
                                                     <div class="product-img">
-                                                        <a href="single-product.html">
+                                                        <a href="product-single?id=${p.id}">
                                                             <img src="${pageContext.request.contextPath}/img/product/25.png" alt="" class="primary-img">
                                                             <img src="${pageContext.request.contextPath}/img/product/26.png" alt="" class="secondary-img">
                                                         </a>
@@ -294,8 +258,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            </c:forEach>   
                                             <!-- Product end -->
-                                         </c:forEach>   
                                         </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade home2" id="list">
@@ -462,11 +426,14 @@
                             <div class="col-md-12">
                                 <div class="toolbar-bottom">
                                     <ul>
+                                       
                                         <li><span>Pages:</span></li>
-                                        <li class="current"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
+                                         <c:forEach begin="1" end="${pageControl.totalPage}" var="pageNumber">
+                                        <!--<li class="current"><a href="#">1</a></li> --> 
+                                        <li><a href="${pageControl.urlPattern}page=${pageNumber}">${pageNumber}</a></li>
+                                         </c:forEach>
                                         <li><a href="#"> <img src="${pageContext.request.contextPath}/img/product/pager_arrow_right.gif" alt=""> </a></li>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -480,9 +447,8 @@
         <!-- footer area start -->
         <jsp:include page="../common/footer.jsp"></jsp:include>
         <!-- footer area end -->
-        <!-- footer area start -->
         
-        <!-- footer area end -->
+        
         <!-- quickview product start -->
         <div id="quickview-wrapper">
             <!-- Modal -->
@@ -538,15 +504,15 @@
                 </div>
             </div>
         </div>
-        <!-- quickview product start -->
-        <!-- jquery
-        ============================================ -->
+        <!-- quickview product end-->
         
+        
+        <!-- jquery JS 
+        ============================================ -->
+        <script src="${pageContext.request.contextPath}/js/vendor/jquery-1.12.4.min.js"></script>
         <!-- modernizr JS
         ============================================ -->
-        <script src="${pageContext.request.contextPath}/js/vendor/modernizr-2.8.3.min.js"></script>
-       
-        <script src="${pageContext.request.contextPath}/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/vendor/modernizr-2.8.3.min.js"></script>               
         <!-- bootstrap JS
         ============================================ -->
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>

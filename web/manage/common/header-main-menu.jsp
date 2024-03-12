@@ -11,8 +11,8 @@
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img src="${pageContext.request.contextPath}/img/logo.png" alt="">
+                                <a href="${pageContext.request.contextPath}/home">
+                                    <img src="${pageContext.request.contextPath}/img/logo.png" alt="logo">
                                 </a>
                             </div>
                         </div>

@@ -40,9 +40,10 @@
                                             </a>
                                             <ul class="search">
                                                 <li>
-                                                    <form action="#">
-                                                        <input type="text">
-                                                        <button type="submit"> <i class="fa fa-search"></i> </button>
+                                                    <form action="home" method="GET">
+                                                        <input type="hidden" name="search" value="searchByName"/>
+                                                        <input type="text" placeholder="Search product" name="keyword"/>
+                                                        <a href="#" onclick="return this.closest('form').submit()"><i class="fa fa-search"></i> </a>
                                                     </form>
                                                 </li>
                                             </ul>
