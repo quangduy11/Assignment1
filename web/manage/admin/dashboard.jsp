@@ -12,7 +12,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>SB Admin - Dashboard</title>
+        <title>Admin - Manage Product</title>
 
         <!-- Custom fonts for this template-->
         <!-- Custom fonts for this template-->
@@ -95,13 +95,13 @@
                                                 </td>
                                                 <td name="description">${p.description}</td>
                                                 <td>
-                                                    <button type="button" class="btn btn-primary"
+                                                    <button type="button" class="btn btn-link"
                                                             data-toggle="modal" 
                                                             data-target="#editProductModal"
                                                             onclick="editProductModal(this)">
                                                         Edit
                                                     </button>
-                                                    <button type="button" class="btn btn-danger" 
+                                                    <button type="button" class="btn btn-link" 
                                                             data-toggle="modal" data-target="#delete-product-modal"
                                                             onclick="deleteProductModal(${p.id})">
                                                         Delete
@@ -113,7 +113,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                        
                     </div>
 
                 </div>
@@ -136,9 +136,11 @@
         <!-- Logout Modal-->
         <jsp:include page="../common/admin/logoutModal.jsp"></jsp:include>
 
-
+        <jsp:include page="deleteProductModal.jsp"></jsp:include>
 
         <jsp:include page="addProductModal.jsp"></jsp:include>
+        
+        <jsp:include page="editProductModal.jsp"></jsp:include>
 
             <!-- Bootstrap core JavaScript-->
             <!-- Bootstrap core JavaScript-->
