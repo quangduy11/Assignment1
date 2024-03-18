@@ -48,17 +48,18 @@
                                                 </li>
                                             </ul>
                                         </li>
+                                        <!-- Login -->
                                         <li>
                                             <a href="#">
                                                 <i class="fa fa-bars"></i>
                                             </a>
                                             <ul>
                                                 <li><a href="my-account.html">my account</a></li>
-                                                <li><a href="wishlist.html">my wishlist</a></li>
+                                                
                                                 <li><a href="cart.html">my cart</a></li>
                                                 <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="#">Log in</a></li>
+                                                
+                                                <li><a href="authen?action=login">Log in</a></li>
                                             </ul>
                                         </li>
                                     </ul>

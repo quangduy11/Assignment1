@@ -46,7 +46,7 @@ public class HomeController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-       
+       response.sendRedirect("home");
     }
 
     private List<Product> findProductDoGet(HttpServletRequest request, PageControl pagecontrol) {

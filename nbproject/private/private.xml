@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Semester_4/PRJ301/Assignment1/src/java/controller/admin/ProductAdminServlet.java</file>
-            <file>file:/D:/Semester_4/PRJ301/Assignment1/web/manage/admin/addProductModal.jsp</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/src/java/model/Account.java</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/web/manage/common/homePage/header-main-menu.jsp</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/src/java/controller/authen/AuthenticationController.java</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/web/manage/common/homePage/header-top-link.jsp</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/web/manage/common/homePage/footer.jsp</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/web/manage/authen/login.jsp</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/src/java/model/Role.java</file>
+            <file>file:/D:/Semester_4/PRJ301/Assignment1/web/manage/homepages/product-single.jsp</file>
         </group>
     </open-files>
 </project-private>
