@@ -82,9 +82,9 @@
          <!-- header area start -->
         <header>
             <!-- header-top-link -->   
-            <jsp:include page="../common/header-top-link.jsp"></jsp:include>
+            <jsp:include page="../common/homePage/header-top-link.jsp"></jsp:include>
             <!-- header-main-menu --> 
-            <jsp:include page="../common/header-main-menu.jsp"></jsp:include>            
+            <jsp:include page="../common/homePage/header-main-menu.jsp"></jsp:include>            
         </header>
         
         <!-- header area end -->
@@ -114,7 +114,7 @@
                     <div class="col-lg-6">
                         <div class="single-product-img tab-content">
                             <div class="single-pro-main-image tab-pane active" id="pro-large-img-1">
-                                <a href="#"><img class="optima_zoom" img src="${pageContext.request.contextPath}/img/product/7.png" data-zoom-image="img/product/7.png" alt="optima"/></a>
+                                <a href="#"><img class="optima_zoom" img src="${product.image}"  alt="optima"/></a>
                             </div>                            
                         </div>                       
                     </div>
@@ -403,7 +403,7 @@
         <!-- related product area end-->
        
         <!-- footer area start -->
-         <jsp:include page="../common/footer.jsp"></jsp:include>
+         <jsp:include page="../common/homePage/footer.jsp"></jsp:include>
         <!-- footer area end -->
 
         

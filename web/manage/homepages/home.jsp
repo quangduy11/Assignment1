@@ -1,6 +1,3 @@
-
-
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +7,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> Shop || James </title>
+        <title> Njr Store </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -83,17 +80,19 @@
         <!-- header area start -->
         <header>
             <!-- header-top-link -->   
-            <jsp:include page="../common/header-top-link.jsp"></jsp:include>
+            <jsp:include page="../common/homePage/header-top-link.jsp"></jsp:include>
             <!-- header-main-menu --> 
-            <jsp:include page="../common/header-main-menu.jsp"></jsp:include>
+            <jsp:include page="../common/homePage/header-main-menu.jsp"></jsp:include>
             
         </header>
         <!-- header area end -->
+        
         <!-- product items banner start -->
         <div class="product-banner">
-            <img src="${pageContext.request.contextPath}/img/product/banner.jpg" alt="">
+            <img src="${pageContext.request.contextPath}/img/banner/banner.png" alt="">
         </div>
         <!-- product items banner end -->
+        
         <!-- product main items area start -->
         <div class="product-main-items">
             <div class="container">
@@ -192,15 +191,7 @@
                                         Gird
                                     </a>
                                 </li>
-                                <li role="presentation" class="list">
-                                    <a href="#list" aria-controls="list" role="tab" data-bs-toggle="tab">
-                                        <span>
-                                            <img class="primary" src="img/product/list-primary.png" alt="">
-                                            <img class="secondary" src="img/product/list-secondary.png" alt="">
-                                        </span>
-                                        List
-                                     </a>
-                                </li>
+
                             </ul>
                             <div class="sort-by">
                                 <label>Sort By</label>
@@ -235,8 +226,8 @@
                                                 <div class="single-product">                                                    
                                                     <div class="product-img">
                                                         <a href="product-single?id=${p.id}">
-                                                            <img src="${pageContext.request.contextPath}/img/product/25.png" alt="" class="primary-img">
-                                                            <img src="${pageContext.request.contextPath}/img/product/26.png" alt="" class="secondary-img">
+                                                            <img src="${p.image}" alt="" class="primary-img" >
+                                                            <img src="${p.image}"" class="secondary-img">
                                                         </a>
                                                     </div>
                                                     <div class="actions">
@@ -249,10 +240,10 @@
                                                     </div>
                                                     <div class="product-price">
                                                         <div class="product-name">
-                                                            <h4> <a href="#">${p.name}</a> </h4>
+                                                            <h4> <a href="product-single?id=${p.id}">${p.name}</a> </h4>
                                                         </div>
                                                         <div class="price-rating">
-                                                            <span>$170.00</span>
+                                                            <span>$${p.price}</span>
                                                             
                                                         </div>
                                                     </div>
@@ -262,165 +253,7 @@
                                             <!-- Product end -->
                                         </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade home2" id="list">
-                                        <div class="product-catagory">
-                                            <div class="single-list-product row">
-                                                <div class="col-md-4">
-                                                    <div class="list-product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="${pageContext.request.contextPath}/img/product/1.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="list-product-info">
-                                                        <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
-                                                        <div class="price-rating">
-                                                            <span class="old-price">$700.00</span>
-                                                            <span>$800.00</span>
-                                                            <div class="ratings">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-half-o"></i>
-                                                                <a href="#" class="review">1 Review(s)</a>
-                                                                <a href="#" class="add-review">Add Your Review</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list-product-details">
-                                                            <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                            <a href="single-product.html">Learn More</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-list-product row">
-                                                <div class="col-md-4">
-                                                    <div class="list-product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="${pageContext.request.contextPath}/img/product/6.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="list-product-info">
-                                                        <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
-                                                        <div class="price-rating">
-                                                            <span class="old-price">$700.00</span>
-                                                            <span>$800.00</span>
-                                                            <div class="ratings">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-half-o"></i>
-                                                                <a href="#" class="review">1 Review(s)</a>
-                                                                <a href="#" class="add-review">Add Your Review</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list-product-details">
-                                                            <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                            <a href="single-product.html">Learn More</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-list-product row">
-                                                <div class="col-md-4">
-                                                    <div class="list-product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="${pageContext.request.contextPath}/img/product/3.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="list-product-info">
-                                                        <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
-                                                        <div class="price-rating">
-                                                            <span class="old-price">$700.00</span>
-                                                            <span>$800.00</span>
-                                                            <div class="ratings">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-half-o"></i>
-                                                                <a href="#" class="review">1 Review(s)</a>
-                                                                <a href="#" class="add-review">Add Your Review</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list-product-details">
-                                                            <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                            <a href="single-product.html">Learn More</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-list-product row">
-                                                <div class="col-md-4">
-                                                    <div class="list-product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="${pageContext.request.contextPath}/img/product/4.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="list-product-info">
-                                                        <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
-                                                        <div class="price-rating">
-                                                            <span class="old-price">$700.00</span>
-                                                            <span>$800.00</span>
-                                                            <div class="ratings">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-half-o"></i>
-                                                                <a href="#" class="review">1 Review(s)</a>
-                                                                <a href="#" class="add-review">Add Your Review</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list-product-details">
-                                                            <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                            <a href="single-product.html">Learn More</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="single-list-product row">
-                                                <div class="col-md-4">
-                                                    <div class="list-product-img">
-                                                        <a href="single-product.html">
-                                                            <img src="${pageContext.request.contextPath}/img/product/5.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="list-product-info">
-                                                        <a href="single-product.html" class="list-product-name"> Cras neque metus</a>
-                                                        <div class="price-rating">
-                                                            <span class="old-price">$700.00</span>
-                                                            <span>$800.00</span>
-                                                            <div class="ratings">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star-half-o"></i>
-                                                                <a href="#" class="review">1 Review(s)</a>
-                                                                <a href="#" class="add-review">Add Your Review</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list-product-details">
-                                                            <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nul
-                                                            <a href="single-product.html">Learn More</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -445,7 +278,7 @@
         <!-- product main items area end -->
 
         <!-- footer area start -->
-        <jsp:include page="../common/footer.jsp"></jsp:include>
+        <jsp:include page="../common/homePage/footer.jsp"></jsp:include>
         <!-- footer area end -->
         
         
